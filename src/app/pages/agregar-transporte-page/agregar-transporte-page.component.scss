@@ -2,8 +2,9 @@ button {
     font-size: 1.5rem;
 }
 
+:host-context(.dark-theme) label,
 :host-context(.dark-theme) th,
 :host-context(.dark-theme) td,
 :host-context(.dark-theme) h1 {
-    color: white;
+    color: var(--light-theme-secondary);
 }

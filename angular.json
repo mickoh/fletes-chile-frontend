@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fletes-chile"
+    }
+  },
+  "defaultProject": "fletes-chile",
+  "cli": {
+    "analytics": false
+  }
 }

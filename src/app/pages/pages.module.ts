@@ -9,16 +9,17 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { CrearFletePageComponent } from './crear-flete-page/crear-flete-page.component';
+import { AgregarTransportePageComponent } from './agregar-transporte-page/agregar-transporte-page.component';
 
 
 
 @NgModule({
   declarations: [
-    InicioPageComponent, 
-    ClientesPageComponent, 
-    FletesPageComponent, 
-    TransportesPageComponent, 
-    PagesComponent, CrearFletePageComponent, 
+    InicioPageComponent,
+    ClientesPageComponent,
+    FletesPageComponent,
+    TransportesPageComponent,
+    PagesComponent, CrearFletePageComponent, AgregarTransportePageComponent,
   ],
   imports: [
     RouterModule,
