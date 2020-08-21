@@ -1,1 +1,37 @@
-<p>clientes-page works!</p>
+<div class="container">
+    <div class="header-container">
+        <h1>Clientes registrados</h1>
+    </div>
+
+
+    <div class="row justify-content-center">
+        <div *ngIf="isLoading" class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <div  *ngIf="!isLoading" class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clients">
+                    <td>{{cliente.nombre}}</td>
+                    <td>{{cliente.telefono}}</td>
+                    <td>
+                        {{cliente.direccion.detalle.calle}}
+                        {{cliente.direccion.detalle.villa}}
+                        {{cliente.direccion.detalle.sector}}
+                        {{cliente.direccion.numero}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

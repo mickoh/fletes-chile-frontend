@@ -1,1 +1,37 @@
-<p>fletes-page works!</p>
+<div class="container">
+    <div class="row mt-3 justify-content-center">
+        <h1 class="col-4">Fletes registrados</h1>
+        <button routerLink="/nuevo-flete" class="col-2 btn offset-5 btn-primary">Registrar Flete</button>
+    </div>
+
+
+    <div class="row justify-content-center">
+        <div *ngIf="isLoading" class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <div *ngIf="!isLoading" class="row justify-content-center">
+        <div class="col-11">
+            <div class="table-container mt-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Cliente</th>
+                            <th>Transporte</th>
+                            <th>Destino</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -8,6 +8,7 @@ import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { CrearFletePageComponent } from './crear-flete-page/crear-flete-page.component';
 
 
 
@@ -17,7 +18,7 @@ import { RouterModule } from '@angular/router';
     ClientesPageComponent, 
     FletesPageComponent, 
     TransportesPageComponent, 
-    PagesComponent
+    PagesComponent, CrearFletePageComponent, 
   ],
   imports: [
     RouterModule,

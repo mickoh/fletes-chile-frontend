@@ -7,6 +7,7 @@ import { FletesPageComponent } from './fletes-page/fletes-page.component';
 import { TransportesPageComponent } from './transportes-page/transportes-page.component';
 import { ClientesPageComponent } from './clientes-page/clientes-page.component';
 import { PagesComponent } from './pages.component';
+import { CrearFletePageComponent } from './crear-flete-page/crear-flete-page.component';
 
 export const routes: Routes = [
   {
@@ -18,6 +19,7 @@ export const routes: Routes = [
       { path: 'inicio', component: InicioPageComponent },
       { path: 'fletes', component: FletesPageComponent },
       { path: 'transportes', component: TransportesPageComponent },
+      { path: 'nuevo-flete', component: CrearFletePageComponent },
       { path: 'clientes', component: ClientesPageComponent },
     ]
   }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fletes-page.component.scss']
 })
 export class FletesPageComponent implements OnInit {
-
+  isLoading: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
