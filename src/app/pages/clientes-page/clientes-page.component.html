@@ -10,28 +10,28 @@
         </div>
     </div>
 
-    <div  *ngIf="!isLoading" class="table-container">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Teléfono</th>
-                    <th>Dirección</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let cliente of clients">
-                    <td>{{cliente.nombre}}</td>
-                    <td>{{cliente.telefono}}</td>
-                    <td>
-                        {{cliente.direccion.detalle.calle}}
-                        {{cliente.direccion.detalle.villa}}
-                        {{cliente.direccion.detalle.sector}}
-                        {{cliente.direccion.numero}}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div *ngIf="!isLoading" class="table-container">
+        <div class="col-11">
+            <div class="table-container mt-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Teléfono</th>
+                            <th>Dirección</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let cliente of clients">
+                            <td>{{cliente.nombre}}</td>
+                            <td>{{cliente.telefono}}</td>
+                            <td>
+                                {{cliente.direccion.detalle.calle}} {{cliente.direccion.detalle.villa}} {{cliente.direccion.detalle.sector}} {{cliente.direccion.numero}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
-
