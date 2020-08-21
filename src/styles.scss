@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+// Configuraciones Principales
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px
+}
+
+body {
+    line-height: 1.6;
+}

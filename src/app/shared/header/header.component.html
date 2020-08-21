@@ -1,0 +1,7 @@
+<div class="header" [class.dark-theme]="darkTheme">
+    <a class="change-theme" [class.change-theme--light]="darkTheme" (click)="changeTheme()" >
+        <svg class="change-theme__icon" [class.change-theme__icon--light]="darkTheme">
+            <use xlink:href="../../../assets/sprite.svg#icon-brightness-contrast"></use>
+        </svg>
+    </a>
+</div>

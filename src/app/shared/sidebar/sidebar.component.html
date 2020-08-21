@@ -1,0 +1,17 @@
+<div class="sidebar" [class.sidebar--shrink]="!showSidebar" [class.dark-theme]="darkTheme">
+
+    <div class="sidebar__header">
+        <svg *ngIf="showSidebar" class="logo" [class.logo--light]="darkTheme">
+            <use xlink:href="../../../assets/sprite.svg#icon-truck"></use>
+        </svg>
+        <a  (click)="showSidebar = !showSidebar" class="sidebar-menu" [class.sidebar-menu--light]="darkTheme">
+            <svg class="sidebar-menu__icon" [class.sidebar-menu__icon--light]="darkTheme">
+                <use xlink:href="../../../assets/sprite.svg#icon-menu" ></use>
+            </svg>
+        </a>
+    </div>
+    <div class="sidebar__body">
+
+    </div>
+
+</div>

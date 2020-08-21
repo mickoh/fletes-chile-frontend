@@ -1,0 +1,5 @@
+<app-header [darkTheme]="darkTheme" (emiteDarkTheme)="changeTheme($event)" ></app-header>
+<div class="router-container light-theme" [class.dark-theme]="darkTheme">
+    <router-outlet></router-outlet>
+</div>
+<app-sidebar [darkTheme]="darkTheme"></app-sidebar>

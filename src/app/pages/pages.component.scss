@@ -1,0 +1,26 @@
+:host {
+    height: 100%;
+    display: grid;
+    position: relative;
+
+    grid-template-rows: 6rem calc(100vh - 6rem);
+    grid-template-columns: [start-sidebar] max-content [end-sidebar start-container] 1fr [end-container];
+}
+
+.router-container {
+    background-color: gold;
+    grid-row: 2 / 3;
+    grid-column: start-container / end-container;
+}
+
+.light-theme {
+    background-color: var(--light-theme);
+}
+
+.dark-theme {
+    background-color: var(--dark-theme);
+}
+
+router-outlet {
+    display: none;
+}
